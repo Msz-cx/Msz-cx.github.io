@@ -21,10 +21,10 @@
         "mark":{"type":"circle", "clip": true},
         "selection":{"clickanddrag":{"type":"interval","encodings":["y"]}},
         "encoding":{
-              "x":{"field":"Year Constructed", "type": "quantitative", "scale": {"domain": [1800,2000]}},
-              "y":{"field":"Year Acquired", "type": "quantitative", "scale": {"domain": [1800,2000]}},
+              "x":{"field":"Year Constructed", "type": "temporal"},
+              "y":{"field":"Year Acquired", "type": "temporal"},
               "tooltip":[
-                  {"field":"Year Constructed", "type":"quantitative"},
+                  {"field":"Year Constructed", "type":"temporal"},
                   {"aggregate":"sum", "field":"Square Footage","type":"quantitative"}
               ],
               "opacity":{
